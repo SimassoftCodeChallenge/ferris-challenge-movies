@@ -25,7 +25,7 @@ namespace Ferris.Challenge.Movies.WebApi
                     Contact = new Contact
                     {
                         Name = "Luís Gabriel N. Simas",
-                        Email = gabrielsimas@gmail.com,
+                        Email = "gabrielsimas@gmail.com",
                         Url = "https://github.com/gabrielsimas"
                     }                    
                 });
@@ -48,7 +48,7 @@ namespace Ferris.Challenge.Movies.WebApi
             app.UseSwaggerUI(c =>
             {
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "Movies API v1");
-                c.RouterPrefix = string.Empty;
+                c.RoutePrefix = string.Empty;
             });
 
             app.UseMvc();            

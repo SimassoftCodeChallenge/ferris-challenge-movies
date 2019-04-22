@@ -1,12 +1,12 @@
 using System.Collections.Generic;
 using System.Runtime.Serialization;
 
-namespace Test.Challenge.Movies.Infra.DTO.Movies
+namespace Ferris.Challenge.Movies.Infra.Repositories.Movie.Entity
 {
     [DataContract]
-    public class CollectionDTO
+    public class MovieCollectionEntity
     {
-        [DataMember(Name="id")]        
+         [DataMember(Name="id")]        
         public int Id { get; set; }
         [DataMember(Name="name")]
         public string Name { get; set; }
@@ -15,7 +15,6 @@ namespace Test.Challenge.Movies.Infra.DTO.Movies
         [DataMember(Name="backdrop_path")]
         public string BackdropPath { get; set; }
         [DataMember(Name="parts")]
-        public List<MovieDTO> Parts { get; set; }        
-
+        public List<MovieEntity> Parts { get; set; }
     }
 }
